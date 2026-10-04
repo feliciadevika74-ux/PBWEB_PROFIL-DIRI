@@ -1,0 +1,1253 @@
+/* ==========================================
+   MODUL 4 - PROFIL DIRI
+   ========================================== */
+
+/* ==========================================
+   TENTANG SAYA
+   ========================================== */
+
+.about-text {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-text p {
+    color: #52616b;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.about-text p:first-child {
+    font-size: 1.05rem;
+}
+
+.about-text strong {
+    color: #1f4e78;
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+header {
+    background-color: #1f4e78;
+
+    color: white;
+
+    padding: 35px 7% 25px;
+
+    position: relative;
+}
+
+
+.header-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+/* FOTO */
+
+.profile-photo {
+    width: 135px;
+
+    height: 135px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    background-color: white;
+}
+
+
+.profile-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+/* TEKS PROFIL */
+
+.profile-text .greeting {
+    font-size: 0.85rem;
+
+    letter-spacing: 3px;
+
+    color: #b9d8ee;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+.profile-text h1 {
+    font-size: 2.3rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    font-size: 1.15rem;
+
+    font-weight: bold;
+}
+
+
+.campus {
+    color: #c9dfef;
+}
+
+
+/* ==========================================
+   NAVIGASI
+   ========================================== */
+
+nav {
+    max-width: 1100px;
+
+    margin: 28px auto 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    padding-top: 16px;
+}
+
+
+nav ul {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    list-style: none;
+}
+
+
+nav a {
+    display: block;
+
+    padding: 8px 15px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ==========================================
+   TOMBOL TEMA
+   ========================================== */
+
+#btn-tema {
+    display: block;
+
+    margin: 20px auto 0;
+
+    padding: 8px 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+#btn-tema:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ==========================================
+   MAIN
+   ========================================== */
+
+main {
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    padding: 0 25px;
+
+    min-height: 650px;
+}
+
+
+/* Semua bagian disembunyikan */
+
+main > section,
+main > aside {
+    display: none;
+}
+
+
+/* Bagian aktif */
+
+main > section.active,
+main > aside.active {
+    display: block;
+}
+
+
+/* ==========================================
+   SECTION
+   ========================================== */
+
+main > section,
+main > aside {
+    background-color: white;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 5px 20px rgba(31, 78, 120, 0.08);
+}
+
+
+/* ==========================================
+   JUDUL SECTION
+   ========================================== */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.section-label {
+    color: #39739d;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 3px;
+}
+
+
+.section-heading h2 {
+    color: #1f4e78;
+
+    font-size: 2rem;
+
+    margin-bottom: 5px;
+}
+
+
+.section-heading > p:last-child {
+    color: #7a8791;
+
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   TENTANG SAYA
+   ========================================== */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+.about-text {
+    padding-right: 15px;
+}
+
+
+.about-text h3 {
+    color: #1f4e78;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 15px;
+}
+
+
+.about-text p {
+    margin-bottom: 15px;
+
+    color: #52616b;
+}
+
+
+.about-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+}
+
+
+.info-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    background-color: #f5f8fa;
+
+    border: 1px solid #e2e9ee;
+
+    border-radius: 10px;
+}
+
+
+.info-box > span {
+    font-size: 1.5rem;
+}
+
+
+.info-box strong {
+    display: block;
+
+    color: #1f4e78;
+
+    font-size: 0.85rem;
+}
+
+
+.info-box p {
+    color: #687781;
+
+    font-size: 0.82rem;
+}
+
+
+/* QUOTE */
+
+.quote-box {
+    margin-top: 35px;
+
+    padding: 20px 25px;
+
+    border-left: 5px solid #39739d;
+
+    background-color: #f4f8fb;
+
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.quote-icon {
+    font-size: 3rem;
+
+    line-height: 1;
+
+    color: #39739d;
+}
+
+
+.quote-box p {
+    font-size: 1.05rem;
+
+    font-style: italic;
+
+    color: #52616b;
+}
+
+
+/* ==========================================
+   PENDIDIKAN
+   ========================================== */
+
+.timeline {
+    position: relative;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding-left: 35px;
+}
+
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 2px;
+
+    background-color: #c7d8e4;
+}
+
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 28px;
+}
+
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.timeline-dot {
+    position: absolute;
+
+    left: -33px;
+
+    top: 25px;
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+    background-color: #39739d;
+
+    border: 3px solid white;
+
+    box-shadow: 0 0 0 2px #39739d;
+}
+
+
+.timeline-content {
+    padding: 23px 25px;
+
+    border: 1px solid #e0e8ee;
+
+    border-radius: 12px;
+
+    background-color: #f9fbfc;
+}
+
+
+.timeline-year {
+    display: inline-block;
+
+    padding: 4px 11px;
+
+    margin-bottom: 9px;
+
+    background-color: #e4f0f7;
+
+    color: #28698f;
+
+    border-radius: 15px;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+}
+
+
+.timeline-content h3 {
+    color: #1f4e78;
+
+    margin-bottom: 5px;
+}
+
+
+.education-major {
+    font-weight: bold;
+
+    color: #39739d;
+
+    margin-bottom: 8px;
+}
+
+
+.timeline-content p:last-child {
+    color: #687781;
+
+    font-size: 0.92rem;
+}
+
+
+/* ==========================================
+   PENGALAMAN
+   ========================================== */
+
+.experience-intro {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 20px 25px;
+
+    margin-bottom: 25px;
+
+    background-color: #f4f8fb;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #39739d;
+}
+
+
+.experience-intro strong {
+    color: #1f4e78;
+
+    font-size: 1.05rem;
+}
+
+
+.experience-intro p {
+    color: #687781;
+
+    font-size: 0.9rem;
+
+    margin-top: 3px;
+}
+
+
+.experience-number {
+    text-align: center;
+
+    flex-shrink: 0;
+
+    padding-left: 25px;
+
+    border-left: 1px solid #d6e1e8;
+}
+
+
+.experience-number span {
+    display: block;
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+    font-weight: bold;
+
+    color: #1f4e78;
+}
+
+
+.experience-number small {
+    color: #7a8791;
+}
+
+
+/* DAFTAR */
+
+.daftar-pengalaman {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.daftar-pengalaman article {
+    position: relative;
+
+    padding: 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dce5ec;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(31, 78, 120, 0.06);
+
+    border-top: 4px solid #39739d;
+}
+
+
+.daftar-pengalaman article h3 {
+    color: #1f4e78;
+
+    font-size: 1rem;
+
+    margin-bottom: 7px;
+}
+
+
+.daftar-pengalaman article p:first-of-type {
+    color: #39739d;
+
+    font-size: 0.82rem;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.daftar-pengalaman article p:last-of-type {
+    color: #687781;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 13px;
+}
+
+
+.daftar-pengalaman article button {
+    padding: 6px 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #e85d5d;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 0.8rem;
+}
+
+
+.daftar-pengalaman article button:hover {
+    background-color: #c94b4b;
+}
+
+
+/* ==========================================
+   TOMBOL TAMBAH
+   ========================================== */
+
+#btn-tambah {
+    display: block;
+
+    margin: 25px auto 0;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #1f4e78;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#btn-tambah:hover {
+    background-color: #28698f;
+}
+
+
+/* ==========================================
+   FORM
+   ========================================== */
+
+.form-pengalaman {
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background-color: #f6f9fb;
+
+    border: 1px solid #dce5ec;
+
+    border-radius: 12px;
+}
+
+
+.form-pengalaman h3 {
+    color: #1f4e78;
+
+    margin-bottom: 15px;
+}
+
+
+.form-pengalaman label {
+    display: block;
+
+    margin: 12px 0 5px;
+
+    font-weight: bold;
+
+    font-size: 0.9rem;
+}
+
+
+.form-pengalaman input,
+.form-pengalaman textarea {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: 1px solid #ccd7df;
+
+    border-radius: 6px;
+
+    font-family: Arial;
+
+    font-size: 0.9rem;
+}
+
+
+.form-pengalaman textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+.form-tombol {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+#btn-simpan,
+#btn-batal {
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 8px 15px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+#btn-simpan {
+    background-color: #1f4e78;
+}
+
+
+#btn-batal {
+    background-color: #7f8c8d;
+}
+
+
+/* ==========================================
+   KEAHLIAN
+   ========================================== */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.skill-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: #f7fafc;
+
+    border: 1px solid #dfe7ed;
+
+    border-radius: 11px;
+
+    min-height: 105px;
+}
+
+
+.skill-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e5f0f7;
+
+    border-radius: 10px;
+
+    color: #1f4e78;
+
+    font-weight: bold;
+
+    font-size: 1.15rem;
+}
+
+
+.skill-card h3 {
+    color: #1f4e78;
+
+    font-size: 0.98rem;
+
+    margin-bottom: 3px;
+}
+
+
+.skill-card p {
+    color: #687781;
+
+    font-size: 0.85rem;
+}
+
+
+/* ==========================================
+   KONTAK
+   ========================================== */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    background-color: #f7fafc;
+
+    border: 1px solid #dfe7ed;
+
+    border-radius: 11px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.contact-card:hover {
+    background-color: #edf5fa;
+
+    border-color: #9fc0d5;
+}
+
+
+.contact-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #e5f0f7;
+
+    color: #1f4e78;
+
+    font-size: 1.2rem;
+}
+
+
+.contact-card small {
+    display: block;
+
+    color: #7a8791;
+
+    margin-bottom: 2px;
+}
+
+
+.contact-card strong {
+    display: block;
+
+    color: #1f4e78;
+
+    font-size: 0.9rem;
+
+    word-break: break-word;
+}
+
+
+.toggle-kontak {
+    display: block;
+
+    margin: 25px auto 0;
+
+    padding: 9px 17px;
+
+    border: 1px solid #1f4e78;
+
+    border-radius: 6px;
+
+    background-color: transparent;
+
+    color: #1f4e78;
+
+    cursor: pointer;
+}
+
+
+.toggle-kontak:hover {
+    background-color: #1f4e78;
+
+    color: white;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    margin-top: 40px;
+
+    padding: 25px 20px;
+
+    background-color: #1f4e78;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin-bottom: 4px;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+}
+
+
+footer span {
+    color: #c9ddeb;
+
+    font-size: 0.78rem;
+}
+
+/* ==========================================
+   DARK MODE
+   ========================================== */
+
+body.dark-mode {
+    background-color: #18232d;
+
+    color: #e6edf2;
+}
+
+
+body.dark-mode main > section,
+body.dark-mode main > aside {
+    background-color: #22313d;
+
+    color: #e6edf2;
+}
+
+
+body.dark-mode .about-text p,
+body.dark-mode .timeline-content p:last-child,
+body.dark-mode .experience-intro p,
+body.dark-mode .daftar-pengalaman article p:last-of-type {
+    color: #c1ccd3;
+}
+
+
+body.dark-mode .about-info .info-box,
+body.dark-mode .timeline-content,
+body.dark-mode .experience-intro,
+body.dark-mode .skill-card,
+body.dark-mode .contact-card,
+body.dark-mode .form-pengalaman {
+    background-color: #1c2a35;
+
+    border-color: #344956;
+}
+
+
+body.dark-mode .info-box strong,
+body.dark-mode .timeline-content h3,
+body.dark-mode .skill-card h3,
+body.dark-mode .contact-card strong,
+body.dark-mode .daftar-pengalaman article h3 {
+    color: #a9d1e9;
+}
+
+
+body.dark-mode .quote-box {
+    background-color: #1c2a35;
+}
+
+
+body.dark-mode .quote-box p {
+    color: #c8d2d9;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 30px 20px 22px;
+    }
+
+
+    .header-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .profile-text h1 {
+        font-size: 1.8rem;
+    }
+
+
+    main {
+        margin: 20px auto;
+
+        padding: 0 15px;
+    }
+
+
+    main > section,
+    main > aside {
+        padding: 28px 22px;
+    }
+
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .about-text {
+        padding-right: 0;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .daftar-pengalaman {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .footer-right {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .profile-photo {
+        width: 110px;
+
+        height: 110px;
+    }
+
+
+    .profile-text h1 {
+        font-size: 1.55rem;
+    }
+
+
+    nav ul {
+        gap: 3px;
+    }
+
+
+    nav a {
+        padding: 7px 9px;
+
+        font-size: 0.8rem;
+    }
+
+
+    main > section,
+    main > aside {
+        padding: 25px 18px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 1.65rem;
+    }
+
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience-intro {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .experience-number {
+        border-left: none;
+
+        border-top: 1px solid #d6e1e8;
+
+        padding-left: 0;
+
+        padding-top: 12px;
+
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    .timeline {
+        padding-left: 27px;
+    }
+
+
+    .timeline-dot {
+        left: -25px;
+    }
+
+
+    .timeline::before {
+        left: 7px;
+    }
+
+}
